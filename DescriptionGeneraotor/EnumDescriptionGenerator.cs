@@ -66,7 +66,7 @@ public sealed class EnumDescriptionGenerator : ISourceGenerator
         {
 
             sb.Append($@"
-                    public static string GetDescription(this {item.FullName} value)
+                    public static string GetDescriptionSourceGen(this {item.FullName} value)
                     {{
                         return value switch
                         {{
